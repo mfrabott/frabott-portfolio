@@ -2,8 +2,9 @@
 
 
 *{
-    font-family: "georgia pro cond semibold", Georgia, 'Times New Roman', Times, serif;
-    font-variant:small-caps;
+    font-family: 'Syncopate', sans-serif;
+    font-variant: small-caps;
+    font-weight: 400;
 }
 
 main{
@@ -17,8 +18,9 @@ main{
  } */
 
 h1 {
-    font-family: "georgia pro cond semibold", Georgia, 'Times New Roman', Times, serif;
-    font-weight:800;
+    font-weight:700;
+    font-family: syncopate, sans-serif;
+    font-weight: 800;
     font-size: 72px;
     font-variant:small-caps;
     font-style: oblique;
@@ -42,13 +44,15 @@ background-color: #18044e;
         #ffffff,
         #ffffff,
         #ffffff,
-        #ffffff,
-        #ffffff,
         #3f31be,
         #3026be,
         #1613a3,
         #1922a3, 
         #09139b,
+        #1922a3, 
+        #09139b,
+        #031d94,
+        #1f22c9, 
         #031d94,
         #1f22c9, 
         #3033db, 
@@ -56,6 +60,8 @@ background-color: #18044e;
         #1357f5, 
         #395fac, 
         #e0e0e0,
+        #ffffff,        
+        #ffffff,
         #ffffff,
         #ffffff);
 
