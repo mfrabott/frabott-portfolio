@@ -2,8 +2,8 @@
 :root {
     --light-gray: rgb(186, 186, 194);
     --dark: rgb(2, 6, 61);
-    --border: 2px solid #1613a3;
-    --border-radius: 10px;
+    --border: 2px solid #1512d8;
+    --border-radius: 13px;
   }
 
 /* Global selectors */
@@ -22,11 +22,9 @@ header{
 }
 
 h1 {
-    font-weight:900;
-    font-family: syncopate, sans-serif;
+    font-weight: 1000;
     font-weight: 900;
     font-size: 72px;
-    font-variant:small-caps;
     font-style: oblique;
     text-align: center;
     margin-bottom: 0;
@@ -57,16 +55,16 @@ h2{
     height: 160px;
     width: 160px;
     border: var(--border);
+    border-style: ;
     border-radius: 80px;
     margin: 40px 0px;
-    animation-play-state: paused;
 }
 
 nav{
     display: inline;
     margin: 120px 0px 80px 0px;
-    flex-flow:column;
-    display: flex;
+    display: flex; 
+    flex-flow: column;
     justify-content: space-around;
     text-align: center;
 }
@@ -77,22 +75,15 @@ nav a{
     font-weight: 600;
     text-decoration: none;
     padding: 10px;
-    display: inline;
-    justify-content: space-around;
 }
 
 main{
     background-image: linear-gradient(to top, rgb(2, 6, 61), rgb(2, 6, 61),rgba(255, 255, 255, 0));
     height: 100%;
     width: 100%;
-    display:block;
 }
 
-/* Work Section */
-.work{
-    margin:200px 0px;
-    text-align: left;
-}
+/* Creations Section */
 
 .creations{
     display: flex; 
@@ -101,7 +92,6 @@ main{
     position: relative;
     justify-content: center;
     align-items:center;
-
 }
 
 .project{
@@ -129,15 +119,15 @@ main{
     border-radius: var(--border-radius);
     position: absolute;
     justify-content: center;
-    bottom:40px;
-    left:0px;
+    bottom: 47px;
+    left: 45px;
     padding: 5px;
     background-color: var(--light-gray);
 }
 
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
  .project:hover{
-    box-shadow: inset 0px 0px 30px rgb(0, 217, 255), 0 0 30px rgb(0, 217, 255); 
+    box-shadow: inset 0px 0px 20px var(--dark), 0 0 20px var(--dark); 
 }
 
 .section-heading{
@@ -167,7 +157,7 @@ main{
 .contact-info li{
     display: block;
     list-style-type:none;
-    font-size: 18px;
+    font-size: 24px;
     margin: 25px 50px;
     justify-content: right;
 }
@@ -177,6 +167,8 @@ main{
     font-weight: 700;
     color:rgb(242, 240, 255);
 }
+
+/* Text gradient animation effect template below originally sourced from: https://fossheim.io/writing/posts/css-text-gradient/ */
 
 .gradient-text {
     /* Fallback: Set a background color. */
@@ -209,10 +201,6 @@ main{
             var(--light-gray),
             var(--light-gray));
     
-    /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat:repeat;
-    
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
     -webkit-background-clip: text;
@@ -220,25 +208,9 @@ main{
     
     /* Animate the text when loading the element. */
         /* This animates it on page load and when hovering out. */
-        animation: rainbow-text-simple-animation 3.5s ease-in backwards;
+        animation: rainbow-text-simple-animation 2.5s ease-in backwards;
         }
     
-    /* Move the background and make it smaller. */
-    /* Animation shown when entering the page. */
-    /* @keyframes rainbow-text-simple-animation-rev {
-        0% {
-            background-size: 300%;
-        }
-        40% {
-            background-size: 650%;
-        }
-        100% {
-            background-size: 650%;
-        }
-    } */
-    
-    /* Move the background and make it larger. */
-    /* Animation shown when hovering over the text. */
     @keyframes rainbow-text-simple-animation {
         0% {
             background-size: 650%;
@@ -254,31 +226,35 @@ main{
 
 /* Adaptive media */
 
-        /* Tablets and smaller - Title name stacks vertically and section headings and contact info align centrally*/
+        /* Tablets and smaller - Title name stacks vertically and section headings and contact info align centrally. Dark section of header expands to provide background for light Title*/
 
         @media screen and (max-width: 992px) {
+            /* Stacks name and avatar*/
             .name-avatar {
             flex-wrap: wrap;
             }
-
+            
+            /* Increases margin above first name */
             .first-name{
             margin-top: 60px;
             }
 
+            /* Dark section of header expands to provide background for light Title*/ */
             header{ 
                 background-image: linear-gradient(to bottom, rgb(2, 6, 61), rgb(2, 6, 61), rgb(2, 6, 61), rgba(253, 253, 253, 0));
             }
 
+            /* Centrally aligns section headings */
            .section-heading{
                 text-align: center;
                 margin-left: 0px;
             }
 
+            /* Centrally aligns contact information */
             .contact-info{
                 text-align: center;
                 margin-left: 0px;
             }
-
 
         }
   
