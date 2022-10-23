@@ -7,21 +7,23 @@
     <title>Portfolio | Michael Frabott</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Google font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="text-center">
+    <header>
         <section class="name-avatar">
-            <h1 class="gradient-text">Michael</h1>
+            <h1 class="gradient-text first-name">Michael</h1>
             <img class="avatar" src="./assets/images/frabott-wave-2.gif"></img>
-            <h1 class="gradient-text">Frabott</h1>
+            <h1 class="gradient-text last-name">Frabott</h1>
         </section>
+
         <nav>
                 <a href="#work">creations</a>
-                <a href="#bio">info</a>
+                <a href="#bio">credentials</a>
                 <a href=#contact-info>contact</a>
         </nav>
    
@@ -31,10 +33,10 @@
     <main>
 
         <!-- project screenshots/image demos that link to the deployed projects -->
-            <h2>creations</h2>        
+                
+            <h2 class="section-heading dark">creations</h2>
             
-            <section class="creations" id="creations">
-            
+            <section class="creations" id="creations"> 
             <!-- First project image/section should be larger than others -->
             
             <section class="project focus-project" id="first-project">
@@ -44,7 +46,7 @@
                 </section>
     
                 <section class="project-image">
-                    <img src="./assets/images/164-400x400.jpg"alt="Graphic with Coming Soon text"></img>
+                    <a href="https://github.com/mfrabott/module-1-mini-project"><img src="./assets/images/164-400x400.jpg" alt="Graphic with Coming Soon text" ></img></a>
                 </section>
             
             </section>       
@@ -105,15 +107,14 @@
         
 <!-- bio including photo or avatar -->
         <section class="bio" id="bio">
-            <h2>Info</h2>
+            <h2 class="section-heading">credentials</h2>
 
         </section>
 
 
         <!-- contact information -->
         <section class="contact-info" id="contact-info">
-            
-            <h2>Contact</h2>
+            <h2 class="section-heading">contact</h2>
             <ul>
                 <li><span class="contact-link"><a href="mailto: michael.frabott@gmail.com">Write</span></a> | michael.frabott@gmail.com</li>
                 <li><span class="contact-link"><a href="tel:6143063071">Dial</a></span> | (614) 306-3071</li>

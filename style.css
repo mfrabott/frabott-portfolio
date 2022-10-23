@@ -1,35 +1,31 @@
-/* color scheme sourced from http://khroma.co/generator/ */
+/* Variables */
 :root {
-    -- light-gray: rgb(199, 199, 202);
-    --outer-space: #33393f;
-    --bright-turquoise: #2aefcb;
-    --gin: #e0eae4;
-    --heliotrope: #e866ec;
+    --light-gray: rgb(186, 186, 194);
+    --dark: rgb(2, 6, 61);
+    --border: 2px solid #1613a3;
+    --border-radius: 10px;
   }
-
 
 /* Global selectors */
 *{
     font-family: 'Syncopate', sans-serif;
     font-variant: small-caps;
-    font-weight: 400;
 }
-
-main{
-    background-image: linear-gradient(to top, rgb(2, 6, 61), rgb(2, 6, 61),rgba(255, 255, 255, 0));
-    height: 100%;
+ 
+body{
     width: 100%;
 }
 
- header{ 
-    background-image: linear-gradient(to bottom, rgb(2, 6, 61), rgba(253, 253, 253, 0));
- }
+header{ 
+    background-image: linear-gradient(to bottom, rgb(2, 6, 61), rgb(2, 6, 61), rgba(253, 253, 253, 0));
+    width:100%;
+}
 
 h1 {
     font-weight:900;
     font-family: syncopate, sans-serif;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 72px;
     font-variant:small-caps;
     font-style: oblique;
     text-align: center;
@@ -38,21 +34,18 @@ h1 {
   }
   
 h2{
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 600;
     margin-left: 50px;
     text-decoration: underline;
+    color: var(--dark);
 }
 
   h3{
     font-size: 32px;
     font-weight: 600;
+    color: var(--dark);
   }
-
-  header{
-    width:100%;
-    
-}
 
 .name-avatar{
     display: flex;
@@ -61,42 +54,39 @@ h2{
 }
 
 .avatar{
-        height: 160px;
+    height: 160px;
     width: 160px;
-    border: #1613a3 2px solid;
+    border: var(--border);
     border-radius: 80px;
     margin: 40px 0px;
     animation-play-state: paused;
 }
 
 nav{
-
     display: inline;
-    margin: 40px 0px 60px 0px;
+    margin: 120px 0px 80px 0px;
     flex-flow:column;
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 
 nav a{
-    font-size: 40px;
-    font-weight: 00;
+    font-size: 32px;
+    color: var(--dark);
+    font-weight: 600;
+    text-decoration: none;
     padding: 10px;
     display: inline;
     justify-content: space-around;
 }
 
-
-nav a{
-    text-decoration:none;
-    color:black;
-    font-weight: 600;
+main{
+    background-image: linear-gradient(to top, rgb(2, 6, 61), rgb(2, 6, 61),rgba(255, 255, 255, 0));
+    height: 100%;
+    width: 100%;
+    display:block;
 }
-
-.text-center {
-    text-align: center;
-  }
-
 
 /* Work Section */
 .work{
@@ -110,14 +100,14 @@ nav a{
     flex-wrap: wrap; 
     position: relative;
     justify-content: center;
+    align-items:center;
 
 }
 
 .project{
-    border: 2px solid black;
-    margin:10px;
-    margin-bottom: 50px;
-    border-radius: 10px;
+    border: var(--border);
+    margin:40px;
+    border-radius: var(--border-radius);
     height: 400px;
     width: 400px;
     display: flex;
@@ -134,48 +124,51 @@ nav a{
 }
 
 .project-title{
-    border: 1px solid;
+    border: var(--border);
     text-align: center;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     position: absolute;
     justify-content: center;
     bottom:40px;
     left:0px;
     padding: 5px;
-    background-color: rgb(94, 89, 89);
-    z-index: 1;
+    background-color: var(--light-gray);
 }
 
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
-.project:hover {
-  box-shadow: inset 0px 0px 10px rgb(104, 12, 5), 0 0 30px rgb(104, 12, 5); 
+ .project:hover{
+    box-shadow: inset 0px 0px 30px rgb(0, 217, 255), 0 0 30px rgb(0, 217, 255); 
 }
 
+.section-heading{
+    color: var(--light-gray);
+    margin-bottom: 30px;
+}
 
+.dark{
+    color: var(--dark);
+}
 
 /* Bio section */
 .bio{
     margin-top:100px;
     text-align: left;
+    color: var(--light-gray);
 }
 
 /* Contact Section */
 .contact-info{
-    color:rgb(199, 199, 202);
+    color:var(--light-gray);
     margin-top: 400px;
     position: relative;
-    bottom: 60px
-}
-
-.contact-info h2{
-    color: rgb(199, 199, 202);
+    bottom: 100px
 }
 
 .contact-info li{
     display: block;
     list-style-type:none;
     font-size: 18px;
-    margin: 15px 50px;
+    margin: 25px 50px;
     justify-content: right;
 }
 
@@ -187,36 +180,34 @@ nav a{
 
 .gradient-text {
     /* Fallback: Set a background color. */
-    background-color: #18044e;
+    background-color: var(--light-gray);
     
     /* Create the gradient. */
         background-image: linear-gradient(
             90deg,
-            #0a027e,
-            #010a8a, 
-            #161b68,
-            #2c2f64, 
-            #0c09c5, 
-            #515a83, 
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff,
-            #ffffff);
+            var(--dark),
+            var(--dark),
+            var(--dark), 
+            var(--dark), 
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray));
     
     /* Set the background size and repeat properties. */
     background-size: 100%;
@@ -230,68 +221,64 @@ nav a{
     /* Animate the text when loading the element. */
         /* This animates it on page load and when hovering out. */
         animation: rainbow-text-simple-animation 3.5s ease-in backwards;
-    
-    }
-    
-    /* .gradient-text:hover{ */
-        animation: rainbow-text-simple-animation-rev 3.0s ease-in forwards;
-    }
-    
+        }
     
     /* Move the background and make it smaller. */
-    /* Animation shown when entering the page and after the hover animation. */
-    @keyframes rainbow-text-simple-animation-rev {
+    /* Animation shown when entering the page. */
+    /* @keyframes rainbow-text-simple-animation-rev {
         0% {
-            background-size: 650%;
+            background-size: 300%;
         }
         40% {
             background-size: 650%;
         }
         100% {
-            background-size: 100%;
+            background-size: 650%;
         }
-    }
+    } */
     
     /* Move the background and make it larger. */
     /* Animation shown when hovering over the text. */
     @keyframes rainbow-text-simple-animation {
         0% {
-            background-size: 100%;
+            background-size: 650%;
         }
         80% {
-            background-size: 650%;
+            background-size: 250%;
         }
         100% {
-            background-size: 650%;
+            background-size: 100%;
         }
     }
 
 
 /* Adaptive media */
 
-    /* SAMPLE BELOW */
-
-        /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
-
-        /* Tablets - header changes color
+        /* Tablets and smaller - Title name stacks vertically and section headings and contact info align centrally*/
 
         @media screen and (max-width: 992px) {
-            header {
-            background: #772014;
-            }
-        }*/
-        
-        /* Large smartphones - title wraps */
-        @media screen and (max-width: 768px) {
             .name-avatar {
             flex-wrap: wrap;
             }
-        }
-        
-        /* Small smartphones - image placeholders change color */
-        /* @media screen and (max-width: 576px) {
-            .sample-img {
-            background-color: #8ac4ff;
+
+            .first-name{
+            margin-top: 60px;
             }
-        }  */
+
+            header{ 
+                background-image: linear-gradient(to bottom, rgb(2, 6, 61), rgb(2, 6, 61), rgb(2, 6, 61), rgba(253, 253, 253, 0));
+            }
+
+           .section-heading{
+                text-align: center;
+                margin-left: 0px;
+            }
+
+            .contact-info{
+                text-align: center;
+                margin-left: 0px;
+            }
+
+
+        }
   
