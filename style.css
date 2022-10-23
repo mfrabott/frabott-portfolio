@@ -1,6 +1,14 @@
+/* color scheme sourced from http://khroma.co/generator/ */
+:root {
+    -- light-gray: rgb(199, 199, 202);
+    --outer-space: #33393f;
+    --bright-turquoise: #2aefcb;
+    --gin: #e0eae4;
+    --heliotrope: #e866ec;
+  }
+
+
 /* Global selectors */
-
-
 *{
     font-family: 'Syncopate', sans-serif;
     font-variant: small-caps;
@@ -13,64 +21,71 @@ main{
     width: 100%;
 }
 
- /* header{ 
+ header{ 
     background-image: linear-gradient(to bottom, rgb(2, 6, 61), rgba(253, 253, 253, 0));
- } */
+ }
 
 h1 {
-    font-weight:700;
+    font-weight:900;
     font-family: syncopate, sans-serif;
-    font-weight: 800;
-    font-size: 72px;
+    font-weight: 900;
+    font-size: 60px;
     font-variant:small-caps;
     font-style: oblique;
     text-align: center;
     margin-bottom: 0;
-    margin-bottom: -0.25em;
-    /* display: block; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    cursor: pointer;
     width: 100%;
   }
-
-  h3{
-    font-size: 24px;
-  }
-
-
-    
-
-header{
-    width:100%;
+  
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 50px;
+    text-decoration: underline;
 }
 
-/* nav{
+  h3{
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  header{
+    width:100%;
+    
+}
+
+.name-avatar{
     display: flex;
-    justify-content: space-around;
-} */
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar{
+        height: 160px;
+    width: 160px;
+    border: #1613a3 2px solid;
+    border-radius: 80px;
+    margin: 40px 0px;
+    animation-play-state: paused;
+}
 
 nav{
-    font-size: 40px;
+
     display: inline;
-    list-style-type:none;
-    margin: 60px 0px;
+    margin: 40px 0px 60px 0px;
+    flex-flow:column;
     display: flex;
     justify-content: space-around;
-    /* justify-content: space-around; */
 }
 
 nav a{
     font-size: 40px;
+    font-weight: 00;
+    padding: 10px;
     display: inline;
     justify-content: space-around;
-
 }
 
-h2{
-    font-size: 36px;
-    margin-left: 50px;
-}
 
 nav a{
     text-decoration:none;
@@ -102,7 +117,7 @@ nav a{
     border: 2px solid black;
     margin:10px;
     margin-bottom: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 400px;
     width: 400px;
     display: flex;
@@ -124,21 +139,19 @@ nav a{
     border-radius: 15px;
     position: absolute;
     justify-content: center;
-    top:-20px;
-    /* left:0px; */
+    bottom:40px;
+    left:0px;
     padding: 5px;
     background-color: rgb(94, 89, 89);
     z-index: 1;
 }
 
-
-#focus-project{
-
+/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+.project:hover {
+  box-shadow: inset 0px 0px 10px rgb(104, 12, 5), 0 0 30px rgb(104, 12, 5); 
 }
 
-.project{
 
-}
 
 /* Bio section */
 .bio{
@@ -150,6 +163,8 @@ nav a{
 .contact-info{
     color:rgb(199, 199, 202);
     margin-top: 400px;
+    position: relative;
+    bottom: 60px
 }
 
 .contact-info h2{
@@ -159,7 +174,8 @@ nav a{
 .contact-info li{
     display: block;
     list-style-type:none;
-    margin: 10px 15px;
+    font-size: 18px;
+    margin: 15px 50px;
     justify-content: right;
 }
 
@@ -176,26 +192,28 @@ nav a{
     /* Create the gradient. */
         background-image: linear-gradient(
             90deg,
+            #0a027e,
+            #010a8a, 
+            #161b68,
+            #2c2f64, 
+            #0c09c5, 
+            #515a83, 
             #ffffff,
             #ffffff,
             #ffffff,
-            #3f31be,
-            #3026be,
-            #1613a3,
-            #1922a3, 
-            #09139b,
-            #1922a3, 
-            #09139b,
-            #031d94,
-            #1f22c9, 
-            #031d94,
-            #1f22c9, 
-            #3033db, 
-            #025afd, 
-            #1357f5, 
-            #395fac, 
-            #e0e0e0,
-            #ffffff,        
+            #ffffff,
+            #ffffff,
+            #ffffff,
+            #ffffff,
+            #ffffff,
+            #ffffff,
+            #ffffff,
+            #ffffff,
+            #ffffff,
+            #ffffff,
+            #ffffff,
+            #ffffff,
+            #ffffff,
             #ffffff,
             #ffffff,
             #ffffff);
@@ -211,11 +229,11 @@ nav a{
     
     /* Animate the text when loading the element. */
         /* This animates it on page load and when hovering out. */
-        animation: rainbow-text-simple-animation 4.25s ease-in backwards;
+        animation: rainbow-text-simple-animation 3.5s ease-in backwards;
     
     }
     
-    .gradient-text:hover{
+    /* .gradient-text:hover{ */
         animation: rainbow-text-simple-animation-rev 3.0s ease-in forwards;
     }
     
@@ -261,14 +279,14 @@ nav a{
             header {
             background: #772014;
             }
-        }
+        }*/
         
-        /* Large smartphones - navbar changes color */
-        /* @media screen and (max-width: 768px) {
-            nav {
-            background-color: #bb8588;
+        /* Large smartphones - title wraps */
+        @media screen and (max-width: 768px) {
+            .name-avatar {
+            flex-wrap: wrap;
             }
-        } */
+        }
         
         /* Small smartphones - image placeholders change color */
         /* @media screen and (max-width: 576px) {
