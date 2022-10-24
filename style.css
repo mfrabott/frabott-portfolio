@@ -40,10 +40,11 @@ h2{
 }
 
   h3{
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 600;
     color: var(--dark);
   }
+
 
 .name-avatar{
     display: flex;
@@ -83,8 +84,7 @@ main{
     width: 100%;
 }
 
-/* Creations Section */
-
+/* Creations Section - wraps three boxes (panes) containing project cards*/
 .creations{
     display: flex; 
     flex-direction:row;
@@ -94,12 +94,33 @@ main{
     align-items:center;
 }
 
+.projects-highlight-pane{
+    display: flex;
+    flex-shrink: 1;
+}
+
+/* The two panels on either side of the focus project will be vertically aligned. */
+.projects-pane{
+    display: flex;
+    flex-shrink: 2;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This moves one of the panes to the left of the focus pane. Media query will undo this at smaller display size*/
+.left-pane{
+    order: -1;
+}
+
+/* Project cards */
 .project{
     border: var(--border);
     margin:40px;
     border-radius: var(--border-radius);
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap; 
@@ -108,9 +129,18 @@ main{
     position: relative;
 }
 
+.project img{
+    height: 250px;
+}
+
+/* Enlarges the focus project card */
 .focus-project{
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
+}
+
+.focus-project img{
+    height: 350px;
 }
 
 .project-title{
@@ -119,8 +149,7 @@ main{
     border-radius: var(--border-radius);
     position: absolute;
     justify-content: center;
-    bottom: 47px;
-    left: 45px;
+    bottom: 10px;
     padding: 5px;
     background-color: var(--light-gray);
 }
@@ -227,7 +256,17 @@ main{
 
         /* Tablets and smaller - Title name stacks vertically and section headings and contact info align centrally. Dark section of header expands to provide background for light Title*/
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1244px) {
+            /* Aligns project cards vertically with Focus project on top*/
+            
+            .creations{
+                flex-direction: column;
+            }
+            
+            .left-pane{
+            order: 0;
+            }
+
             /* Stacks name and avatar*/
             .name-avatar {
             flex-wrap: wrap;
