@@ -1,12 +1,14 @@
 # frabott-portfolio
 
+## Overview
+
+This challenge was to create a personal portfolio website including certain specified criteria(below). While I do not have much to display at this point, over time I will be able to add to this webpage to demonstrate my abilities to potential employers. 
+
 ## User Story
 
     AS AN employer
     I WANT to view a potential employee's deployed portfolio of work samples
     SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-
-
 
 ## Acceptance Criteria
 
@@ -24,6 +26,22 @@
     WHEN I resize the page or view the site on various screens and devices
     THEN I am presented with a responsive layout that adapts to my viewport
 
+## Challenge Accomplishments
+
+In creating this portfolio, some of the highlights of new skills and concepts I learned and/or applied to this challenge include: 
+
+	Creating my first from-scratch webpage(!);
+    Learning about ‘at rules’;
+    Using media queries to optimize my portfolio webpage for desktop and mobile screens;
+    Learning how to manipulate gradients;
+    Creating and using CSS variables;
+    Learning about and implementing CSS animation;
+    Creating ‘mailto’ and ‘tel’ links to open email client and phone apps, respectively;
+    Using pseudo-classes;
+    Building my comfort level with flexbox concepts.
+
 
 ### Text gradient template
+
+I used the following source code as a foundation for the title text animation:
 https://fossheim.io/writing/posts/css-text-gradient/
