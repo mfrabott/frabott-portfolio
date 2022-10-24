@@ -127,7 +127,7 @@ main{
 
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
  .project:hover{
-    box-shadow: inset 0px 0px 20px var(--dark), 0 0 20px var(--dark); 
+    box-shadow: inset 0px 0px 20px rgb(0, 0, 255), 0 0 20px rgb(0, 0, 255); 
 }
 
 .section-heading{
@@ -208,10 +208,10 @@ main{
     
     /* Animate the text when loading the element. */
         /* This animates it on page load and when hovering out. */
-        animation: rainbow-text-simple-animation 2.5s ease-in backwards;
+        animation: gradient-text-animation 2.5s ease-in backwards;
         }
     
-    @keyframes rainbow-text-simple-animation {
+    @keyframes gradient-text-animation {
         0% {
             background-size: 650%;
         }
@@ -222,7 +222,6 @@ main{
             background-size: 100%;
         }
     }
-
 
 /* Adaptive media */
 
