@@ -93,32 +93,28 @@ main{
 /* Creations Section - wraps three boxes (panes) containing project cards*/
 .creations{
     display: flex; 
-    flex-direction:row;
-    flex-wrap: wrap; 
+    flex-flow:row wrap;
     position: relative;
-    justify-content: center;
+    justify-content: space-around;
     align-items:center;
+    flex: 2;
 }
 
 /* Container with focus project */
 .projects-highlight-pane{
     display: flex;
-    min-width: 0;
-    flex-grow: 0;
-    flex-shrink: 1;
+    flex: 3 0px;
 }
 
 /* The two panels on either side of the focus project will be vertically aligned. */
 .projects-pane{
     display: flex;
-    flex-shrink: 2;
     flex-direction: column;
     position: relative;
     justify-content: center;
     align-items: center;
     min-width: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: 1;
 }
 
 /* This moves one of the panes to the left of the focus pane so that focus project is centered. Media query will undo this at smaller display size*/
@@ -128,38 +124,36 @@ main{
 
 /* Project cards */
 .project{
-    border: var(--border);
+    /* border: var(--border); */
     margin:40px;
     border-radius: var(--border-radius);
     height: 300px;
     width: 300px;
     display: flex;
-    flex-direction:row;
-    flex-wrap: wrap; 
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     position: relative;
     min-width: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: 1;
 }
 
 .project img{
     height: 250px;
     min-width: 100px;
     border-radius: var(--border-radius);
+    padding: 25px;
+    border: var(--border);
 }
 
 /* Enlarges the focus project card */
 .focus-project{
     height: 400px;
     width: 400px;
-    min-width: 0;
 }
 
 .focus-project img{
     height: 350px;
-    min-width: 200px;
 }
 
 /* Overlay with project description */
@@ -172,7 +166,6 @@ main{
     bottom: 10px;
     padding: 5px;
     background-color: var(--light-gray);
-    min-width: 0;
 }
 
 /* Hover creates highlight around project card.*/
@@ -191,7 +184,7 @@ main{
     text-align: left;
     color: var(--light-gray);
     align-items: center;
-*/
+    margin-bottom: 200px;
 }
 
 .bio p{
