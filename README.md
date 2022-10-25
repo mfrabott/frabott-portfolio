@@ -28,8 +28,10 @@ This challenge was to create a personal portfolio website including certain spec
 
 ## Screenshot
 Fullscreen Screenshot:
-![Deployed Portfolio page screenshot - Desktop](./Assets/images/screencapture-portfolio-desktop.png)
-![Deployed Portfolio page screenshot - Mobile](./Assets/images/screencapture-portfolio-mobile.png)
+![Deployed Portfolio page screenshot - Desktop](/assets/images/screencapture-portfolio-desktop.png)
+
+Mobile Screenshot:
+![Deployed Portfolio page screenshot - Mobile](/assets/images/screencapture-portfolio-mobile.png)
 
 ## Deployed Application Link
 https://mfrabott.github.io/frabott-portfolio/
@@ -38,15 +40,15 @@ https://mfrabott.github.io/frabott-portfolio/
 
 In creating this portfolio, some of the highlights of new skills and concepts I learned and/or applied to this challenge include: 
 
-	Creating my first from-scratch webpage(!);
-    Learning about ‘at rules’;
-    Using media queries to optimize my portfolio webpage for desktop and mobile screens;
-    Learning how to manipulate gradients;
-    Creating and using CSS variables;
-    Learning about and implementing CSS animation;
-    Creating ‘mailto’ and ‘tel’ links to open email client and phone apps, respectively;
-    Using pseudo-classes;
-    Building my comfort level with flexbox concepts.
+Creating my first from-scratch webpage(!);
+Learning about ‘at rules’;
+Using media queries to optimize my portfolio webpage for desktop and mobile screens;
+Learning how to manipulate gradients;
+Creating and using CSS variables;
+Learning about and implementing CSS animation;
+Creating ‘mailto’ and ‘tel’ links to open email client and phone apps, respectively;
+Using pseudo-classes;
+Building my comfort level with flexbox concepts.
 
 
 ## Aditional Thoughts
