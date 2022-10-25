@@ -14,7 +14,6 @@
  
 body{
     width: 100%;
-    min-width: 500px;
 }
 
 /* Dark blue to white, top to bottom. */
@@ -103,7 +102,6 @@ main{
 /* Container with focus project */
 .projects-highlight-pane{
     display: flex;
-    flex: 3 0px;
 }
 
 /* The two panels on either side of the focus project will be vertically aligned. */
@@ -113,8 +111,6 @@ main{
     position: relative;
     justify-content: center;
     align-items: center;
-    min-width: 0;
-    flex: 1;
 }
 
 /* This moves one of the panes to the left of the focus pane so that focus project is centered. Media query will undo this at smaller display size*/
@@ -134,16 +130,10 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
-    min-width: 0;
-    flex: 1;
 }
 
 .project img{
     height: 250px;
-    min-width: 100px;
-    border-radius: var(--border-radius);
-    padding: 25px;
-    border: var(--border);
 }
 
 /* Enlarges the focus project card */
@@ -184,16 +174,14 @@ main{
     text-align: left;
     color: var(--light-gray);
     align-items: center;
-    margin-bottom: 200px;
 }
 
 .bio p{
     font-size: 22px;
-    width: 95%;
+    width: 90%;
     line-height: 1.2;
     text-align: justify;
     margin-left: 50px;
-    padding-right: 50px; 
 }
 
 /* Contact Section */
@@ -277,7 +265,7 @@ main{
 
         /* Tablets and smaller - Title name stacks vertically and section headings and contact info align centrally. Dark section of header expands to provide background for light Title*/
 
-        @media screen and (max-width: 1300px) {
+        @media screen and (max-width: 1244px) {
             /* Aligns project cards vertically with Focus project on top*/
             
             .creations{
