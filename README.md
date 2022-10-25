@@ -27,7 +27,7 @@ This challenge was to create a personal portfolio website including certain spec
     THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Screenshot
-Fullscreen Screenshot:
+Desktop Screenshot:
 ![Deployed Portfolio page screenshot - Desktop](/assets/images/screencapture-portfolio-desktop.png)
 
 Mobile Screenshot:
@@ -51,13 +51,14 @@ Using pseudo-classes;
 Building my comfort level with flexbox concepts.
 
 
-## Aditional Thoughts
+## Additional Thoughts
 
 While I am happy enough with the current version of this portfolio, I will continue to make adjustments for personal use, ultimately working on a more minimalistic design. 
 Some of the elements create a busier design than I would ultimately like to end up with, but for the purpose of this challenge (and stage in learning) I wanted to explore and implement new concepts that I may refer back to in the future. 
 
 I also recognize that there are some functions that could be made simpler with the use of flexbox. I'm continuing to develop my understanding and implementation of those featues and plaun to incorprate as I become more comfortable with them. Likewise, there is likely some refactoring that can be done in CSS that would remove excess code that I intend to continue to optimize.
 
+## Reference Sources
 
 ### Text gradient template
 
