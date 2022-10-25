@@ -170,7 +170,7 @@ main{
 
 /* Bio section */
 .bio{
-    margin-top:100px;
+    margin-top: 100px;
     text-align: left;
     color: var(--light-gray);
 }

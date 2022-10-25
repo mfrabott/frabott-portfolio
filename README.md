@@ -41,7 +41,20 @@ In creating this portfolio, some of the highlights of new skills and concepts I 
     Building my comfort level with flexbox concepts.
 
 
+## Aditional Thoughts
+
+While I am happy enough with the current version of this portfolio, I will continue to make adjustments for personal use, ultimately working on a more minimalistic design. 
+Some of the elements create a busier design than I would ultimately like to end up with, but for the purpose of this challenge (and stage in learning) I wanted to explore and implement new concepts that I may refer back to in the future. 
+
+
 ### Text gradient template
 
 I used the following source code as a foundation for the title text animation:
 https://fossheim.io/writing/posts/css-text-gradient/
+
+### Placeholder Images Source
+Lorem Picsum: https://picsum.photos/
+
+    https://i.picsum.photos/id/60/300/300.jpg?hmac=i5-y1rJNoEYHMNapbFH8eYtrGzse0JP0kE9Lje_Gfe0
+
+    https://i.picsum.photos/id/1021/300/300.jpg?hmac=mYLHqn_v668ofQxlpyVHiklJyjvRkU89IIUUc-ZdUOU
