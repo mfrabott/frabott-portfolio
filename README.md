@@ -2,7 +2,7 @@
 
 ## Overview
 
-This challenge was to create a personal portfolio website including certain specified criteria(below). While I do not have much to display at this point, over time I will be able to add to this webpage to demonstrate my abilities to potential employers. 
+This challenge was to create a personal portfolio website including certain specified criteria(below). While I do not have projects to display at this point, over time I will be able to add to this webpage to demonstrate my abilities to potential employers. 
 
 ## User Story
 
@@ -51,8 +51,12 @@ Some of the elements create a busier design than I would ultimately like to end 
 
 I used the following source code as a foundation for the title text animation:
 https://fossheim.io/writing/posts/css-text-gradient/
+Author: Sarah L. Fossheim
+Published: January 19, 2020
+Accessed: 10/21/2022
 
 ### Placeholder Images Source
+
 Lorem Picsum: https://picsum.photos/
 
     https://i.picsum.photos/id/60/300/300.jpg?hmac=i5-y1rJNoEYHMNapbFH8eYtrGzse0JP0kE9Lje_Gfe0

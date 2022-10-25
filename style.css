@@ -16,6 +16,7 @@ body{
     width: 100%;
 }
 
+/* Dark blue to white, top to bottom. */
 header{ 
     background-image: linear-gradient(to bottom, rgb(2, 6, 61), rgb(2, 6, 61), rgba(253, 253, 253, 0));
     width:100%;
@@ -23,11 +24,9 @@ header{
 
 h1 {
     font-weight: 1000;
-    font-weight: 900;
     font-size: 72px;
     font-style: oblique;
     text-align: center;
-    margin-bottom: 0;
     width: 100%;
   }
   
@@ -35,7 +34,6 @@ h2{
     font-size: 44px;
     font-weight: 600;
     margin-left: 50px;
-    text-decoration: underline;
     color: var(--dark);
 }
 
@@ -45,22 +43,23 @@ h2{
     color: var(--dark);
   }
 
-
+/* Title display */
 .name-avatar{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Round avatar with a border */
 .avatar{
     height: 160px;
     width: 160px;
     border: var(--border);
-    border-style: ;
     border-radius: 80px;
     margin: 40px 0px;
 }
 
+/* Navigation display and links */
 nav{
     display: inline;
     margin: 120px 0px 80px 0px;
@@ -78,10 +77,16 @@ nav a{
     padding: 10px;
 }
 
+/* Gradient dark blue to white, bottom to top */
 main{
     background-image: linear-gradient(to top, rgb(2, 6, 61), rgb(2, 6, 61),rgba(255, 255, 255, 0));
     height: 100%;
     width: 100%;
+}
+
+.section-heading{
+    color: var(--light-gray);
+    margin-bottom: 30px;
 }
 
 /* Creations Section - wraps three boxes (panes) containing project cards*/
@@ -94,9 +99,9 @@ main{
     align-items:center;
 }
 
+/* Container with focus project */
 .projects-highlight-pane{
     display: flex;
-    flex-shrink: 1;
 }
 
 /* The two panels on either side of the focus project will be vertically aligned. */
@@ -109,7 +114,7 @@ main{
     align-items: center;
 }
 
-/* This moves one of the panes to the left of the focus pane. Media query will undo this at smaller display size*/
+/* This moves one of the panes to the left of the focus pane so that focus project is centered. Media query will undo this at smaller display size*/
 .left-pane{
     order: -1;
 }
@@ -143,6 +148,7 @@ main{
     height: 350px;
 }
 
+/* Overlay with project description */
 .project-title{
     border: var(--border);
     text-align: center;
@@ -154,16 +160,12 @@ main{
     background-color: var(--light-gray);
 }
 
-/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+/* Hover creates highlight around project card.*/
  .project:hover{
-    box-shadow: inset 0px 0px 20px rgb(0, 0, 255), 0 0 20px rgb(0, 0, 255); 
+    box-shadow: inset 2px 2px 20px rgb(0, 0, 255), 2px 2px 20px rgb(0, 0, 255); 
 }
 
-.section-heading{
-    color: var(--light-gray);
-    margin-bottom: 30px;
-}
-
+/* Changes the color of the 'creations' heading to account for light background. */
 .dark{
     color: var(--dark);
 }
@@ -173,12 +175,21 @@ main{
     margin-top: 100px;
     text-align: left;
     color: var(--light-gray);
+    align-items: center;
+}
+
+.bio p{
+    font-size: 22px;
+    width: 90%;
+    line-height: 1.2;
+    text-align: justify;
+    margin-left: 50px;
 }
 
 /* Contact Section */
 .contact-info{
     color:var(--light-gray);
-    margin-top: 400px;
+    margin-top: 300px;
     position: relative;
     bottom: 100px
 }
@@ -197,7 +208,7 @@ main{
     color:rgb(242, 240, 255);
 }
 
-/* Text gradient animation effect template below originally sourced from: https://fossheim.io/writing/posts/css-text-gradient/ */
+/* Text gradient animation effect template below originally found at: https://fossheim.io/writing/posts/css-text-gradient/ I modified the source code to create the animation effect of my name. */
 
 .gradient-text {
     /* Fallback: Set a background color. */
