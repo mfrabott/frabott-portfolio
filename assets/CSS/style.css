@@ -349,11 +349,10 @@ main{
 
             .bio p{
                 font-size: 12px;
- 
+            }
 
             /* Shrinks Project cards*/
             .project{
-                /* border: var(--border); */
                 margin: 40 px;
                 height: 150px;
                 width: 150px;
@@ -378,4 +377,8 @@ main{
             
             .focus-project img{
                 height: 175px;
+            }
+
+            .contact-info li{
+                font-size: 16px;
             }
