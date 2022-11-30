@@ -148,6 +148,7 @@ main{
 
 .focus-project img{
     height: 350px;
+    width: 350px;
 }
 
 /* Overlay with project description */
@@ -377,6 +378,7 @@ main{
             
             .focus-project img{
                 height: 175px;
+                width: 175px;
             }
 
             .contact-info li{
